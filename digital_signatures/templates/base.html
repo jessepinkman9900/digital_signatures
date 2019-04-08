@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- have to change the links to css,js and other links have to be verified to ensure no broken links -->
 
 <head>
 
@@ -104,23 +105,23 @@
                 <div class="row">
                     <div class="col-md-2 sidebar-col-2">
                         <!--edit1-->
-                        <a href="Introduction.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        <a href="{{ url_for('introduction') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3>
-                        </a><a href="Theory.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        </a><a href="{{ url_for('theory') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Theory</h3>
-                        </a><a href="Objective.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        </a><a href="{{ url_for('objective') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Objective</h3>
-                        </a><a href="Experiment.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        </a><a href="{{ url_for('experiment') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Experiment</h3>
-                        </a><a href="Manual.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        </a><a href="{{ url_for('manual') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Manual</h3>
-                        </a><a href="Quizzes.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        </a><a href="{{ url_for('quizzes') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quizzes</h3>
-                        </a><a href="Procedure.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        </a><a href="{{ url_for('procedure') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Procedure</h3>
-                        </a><a href="Refrences.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        </a><a href="{{ url_for('further_reading') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Refrences</h3>
-                        </a><a href="Feedback.html?domain=Computer Science&lab=CSO Lab" class="sidebar-a">
+                        </a><a href="{{ url_for('feedback') }}" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3>
                         </a> </div>
 
