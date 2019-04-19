@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+      <hr/>
+      {%- for message in get_flashed_messages() %}
+         {{ message }}
+      {%- endfor %}
+      
+      <h3>Quiz Results (<a href = "{{ url_for('quizzes') }}"> Take Quiz
+         </a>)</h3>
+      
+      <table>
+         <thead>
+            <tr>
+               <th>A1</th>
+               <th>A2</th>
+               <th>A3</th>
+               <th>A4</th>
+               <th>A5</th>
+               <th>A6</th>
+               <th>A7</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for answer in answers %}
+               <tr>
+                  <td>{{ answer.a1 }}</td>
+                  <td>{{ answer.a2 }}</td>
+                  <td>{{ answer.a3 }}</td>
+                  <td>{{ answer.a4 }}</td>
+                  <td>{{ answer.a5 }}</td>
+                  <td>{{ answer.a6 }}</td>
+                  <td>{{ answer.a7 }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+   </body>
+</html>
