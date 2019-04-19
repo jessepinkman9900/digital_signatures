@@ -1,1 +1,70 @@
 <!-- have to implement -->
+{% extends "base.html" %}
+{% block page_content %}
+
+<div class="col-md-10 lab-list-col-10">
+    <!--edit -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <h1 class="text-h2-lightblue">Quizzes</h1>
+    <div>
+        <form action="/digital_signatures/quizzes" method="POST">
+            <label for="a1"><b>1.</b> Digital signature can’t provide ______ for the message<br /></label><br />
+            <input type="radio" name="a1" value="a">Integrity<br>
+            <input type="radio" name="a1" value="b">Confidentiality<br>
+            <input type="radio" name="a1" value="c">Non repudiation<br>
+            <input type="radio" name="a1" value="d">Authentication<br>
+            <!-- </form> -->
+            <br>
+            <label for="a2"><b>2.</b> Digital signature uses ______ for generating valname signature</label><br />
+            <!-- <form action="../data.py" method="POST"> -->
+            <input type="radio" name="a2" value="a">Private key<br>
+            <input type="radio" name="a2" value="b">Public key<br>
+            <input type="radio" name="a2" value="c">Secret key<br>
+            <input type="radio" name="a2" value="d">None of the above<br>
+            <!-- </form> -->
+            <br>
+            <label for="a3">
+                <b>3.</b> Verification Algorithm uses ______ for validating digital signature</label><br />
+            <!-- <form action="../data.py" method="POST"> -->
+            <input type="radio" name="a3" value="a">Private key<br>
+            <input type="radio" name="a3" value="b">Public key<br>
+            <input type="radio" name="a3" value="c">Secret key<br>
+            <input type="radio" name="a3" value="d">None of the above<br>
+            <!-- </form> -->
+            <br>
+            <label for="a4"><b>4.</b> Is digital signature scheme possible without public key cryptography</label><br />
+            <!-- <form action="../data.py" method="POST"> -->
+            <input type="radio" name="a4" value="a">Yes<br>
+            <input type="radio" name="a4" value="b">No<br>
+            <input type="radio" name="a4" value="c">May be exist<br>
+            <input type="radio" name="a4" value="d">None of the above<br>
+            <br>
+            <!-- <script type="text/javascript">
+	$(getVal(){
+	$("input[type='button']").click(getVal(){
+		var r1=$("input[name='q1']:checked").val();
+		var r2=$("input[name='q2']:checked").val();
+		var r3=$("input[name='q3']:checked").val();
+		var r4=$("input[name='q4']:checked").val();
+		var ans = [r1, r2, r3, r4];
+</script> -->
+            <label for="a5"><b>5.</b> Explain importance of Hashing(using experiment)and explain why Hashing is needed
+                ?</label><br />
+            <textarea name="a5" placeholder="Write answer here"></textarea><br />
+            <label for="a6"><b>6.</b> Suggest a scheme that does not use any hashing scheme.<br /></label><br />
+            <textarea name="a6" placeholder="Write answer here"></textarea><br />
+            <label for="a7"><b>7.</b> Explain why digital signature scheme works?<br /></label><br />
+            <textarea name="a7" placeholder="Write answer here"></textarea><br />
+            <input type="submit" value="Submit"><br><br>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+{% endblock %}
